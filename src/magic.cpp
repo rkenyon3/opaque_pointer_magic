@@ -22,6 +22,6 @@ void choose_spell(Spell spell, char * magic_words){
 
 void  perform_magic(Spell spell){
     std::cout << "*waves " << spell->helper << "*..." << spell->incantation << std::endl;
-    free(spell);
+    delete(spell);
     spell = NULL;
 }
